@@ -51,6 +51,7 @@ func Routers() *gin.Engine {
 		router.InitExcelRouter(PrivateGroup)                 // 表格导入导出
 		router.InitStutjRouter(PrivateGroup)
 		router.InitStublRouter(PrivateGroup)
+		router.InitStutjtsRouter(PrivateGroup)
 
 	}
 	global.GVA_LOG.Info("router register success")
