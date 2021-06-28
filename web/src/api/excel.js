@@ -1,5 +1,5 @@
 import service from '@/utils/request'
-import { Message } from 'element-ui'
+import {Message} from 'element-ui'
 
 const handleFileError = (res, fileName) => {
   if (typeof (res.data) !== 'undefined') {

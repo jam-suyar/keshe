@@ -37,7 +37,6 @@ func Routers() *gin.Engine {
 		router.InitJwtRouter(PrivateGroup)                   // jwt相关路由
 		router.InitUserRouter(PrivateGroup)                  // 注册用户路由
 		router.InitMenuRouter(PrivateGroup)                  // 注册menu路由
-		router.InitEmailRouter(PrivateGroup)                 // 邮件相关路由
 		router.InitSystemRouter(PrivateGroup)                // system相关路由
 		router.InitCasbinRouter(PrivateGroup)                // 权限相关路由
 		router.InitCustomerRouter(PrivateGroup)              // 客户路由
@@ -48,7 +47,6 @@ func Routers() *gin.Engine {
 		router.InitSysOperationRecordRouter(PrivateGroup)    // 操作记录
 		router.InitSysDictionaryDetailRouter(PrivateGroup)   // 字典详情管理
 		router.InitFileUploadAndDownloadRouter(PrivateGroup) // 文件上传下载功能路由
-		router.InitExcelRouter(PrivateGroup)                 // 表格导入导出
 		router.InitStutjRouter(PrivateGroup)
 		router.InitStublRouter(PrivateGroup)
 		router.InitStutjtsRouter(PrivateGroup)
