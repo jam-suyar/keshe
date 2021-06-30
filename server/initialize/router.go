@@ -50,8 +50,6 @@ func Routers() *gin.Engine {
 		router.InitStutjRouter(PrivateGroup)
 		router.InitStublRouter(PrivateGroup)
 		router.InitStutjtsRouter(PrivateGroup)
-		router.InitStubljhRouter(PrivateGroup)
-
 	}
 	global.GVA_LOG.Info("router register success")
 	return Router
